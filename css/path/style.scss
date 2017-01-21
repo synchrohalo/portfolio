@@ -1,7 +1,158 @@
-$font-stack: Montserrat, sans-serif;
-$primary-color: #333;
+$base:#6BD6C4;
+$base-light:#99EADC;
+$base-dark:#27A08C;
+$neutral:#FFF0D5;
+$contrast:#FA7D8C;
+$white:#fff;
+$black:#000;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+$rad:10em;
+
+@mixin section($height){
+  margin:0 auto;
+  padding:0;
+  padding-top:3em;
+  padding-bottom:3em;
+  min-height:$height;
+  width:100%;
+}
+
+@mixin linear-gradient($direction, $color-stops...){
+  background:nth(nth($color-stops, 1), 1);
+  background:-webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background:linear-gradient($direction, $color-stops);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@mixin transition($args...){
+  -webkit-transition:$args;
+  -moz-transition:$args;
+  -ms-transition:$args;
+  -o-transition:$args;
+  transition:$args;
+}
+
+@mixin keyframes($animation-name){
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str){
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@import "typography";
+@import "nav";
+
+body{
+  margin:0 auto;
+  padding:0;
+  color:$black;
+}
+
+.vertical{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+.button{
+  $height:3em;
+  
+  margin:0 auto;
+  margin-top:3em;
+  border:2px solid $base-dark;
+  text-align:center;
+  height:$height;
+  width:18vw;
+  min-width:15em;
+  border-radius:$rad;
+  line-height:$height;
+  font-weight:normal;
+  
+  @include transition(background-color .2s ease-in);
+  background-color:$white;
+  color:$base-dark;
+  
+  &:hover{
+    color:$white;
+    background-color:$base-dark;
+  }
+}
+
+.row.stagger [class^="col"]{
+  float:right;
+}
+
+#home{
+  @include section(60vh);
+  text-align:center;
+  background-image:url("../../../img/title-pattern.svg");
+  background:$base;
+}
+
+#about{
+  @include section(60vh);
+  background:$neutral;
+}
+
+#skills{
+  @include section(50vh);
+  background:$neutral;
+}
+
+.contact{
+  @include section(50vh);
+  background:$contrast;
+}
+
+#name{
+  margin-top:25vh;
+  
+  img{
+    height:10vh;
+    max-height:10em;
+  }
+  
+  #joanne{
+    margin-right:1em;
+  }
+}
+
+#self-portrait{
+  max-width:20em;
+}
+
+.icon{
+  max-width:15em;
+}
+
+@media only screen and (max-width:720px) and (orientation:landscape){
+  #name{
+  
+    img{
+      height:10vw;
+      max-height:10em;
+    }
+  }
 }

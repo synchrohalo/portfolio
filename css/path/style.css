@@ -1,5 +1,132 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h3 {
+  font-weight: normal;
+  font-size: 1.75rem; }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #27A08C; }
+
+#main-subtitle {
+  margin-top: 0.5em;
+  color: #FFF0D5; }
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 3em;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  text-align: right;
+  z-index: 3;
+  background-color: #fff;
+  position: fixed; }
+  .nav li {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 3em; }
+    .nav li:hover {
+      background-color: #FA7D8C; }
+    .nav li a {
+      color: #000; }
+
 body {
-  font: 100% Montserrat, sans-serif;
-  color: #333; }
+  margin: 0 auto;
+  padding: 0;
+  color: #000; }
+
+.vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.button {
+  margin: 0 auto;
+  margin-top: 3em;
+  border: 2px solid #27A08C;
+  text-align: center;
+  height: 3em;
+  width: 18vw;
+  min-width: 15em;
+  border-radius: 10em;
+  line-height: 3em;
+  font-weight: normal;
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease-in;
+  -ms-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  background-color: #fff;
+  color: #27A08C; }
+  .button:hover {
+    color: #fff;
+    background-color: #27A08C; }
+
+.row.stagger [class^="col"] {
+  float: right; }
+
+#home {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 60vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../../img/title-pattern.svg");
+  background: #6BD6C4; }
+
+#about {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 60vh;
+  width: 100%;
+  background: #FFF0D5; }
+
+#skills {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 50vh;
+  width: 100%;
+  background: #FFF0D5; }
+
+.contact {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 50vh;
+  width: 100%;
+  background: #FA7D8C; }
+
+#name {
+  margin-top: 25vh; }
+  #name img {
+    height: 10vh;
+    max-height: 10em; }
+  #name #joanne {
+    margin-right: 1em; }
+
+#self-portrait {
+  max-width: 20em; }
+
+.icon {
+  max-width: 15em; }
+
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  #name img {
+    height: 10vw;
+    max-height: 10em; } }
 
 /*# sourceMappingURL=style.css.map */

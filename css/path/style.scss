@@ -61,11 +61,11 @@ $rad:10em;
 
 @import "typography";
 @import "nav";
+@import "works";
 
 body{
   margin:0 auto;
   padding:0;
-  color:$black;
 }
 
 .vertical{
@@ -124,6 +124,10 @@ body{
 .contact{
   @include section(50vh);
   background:$contrast;
+  
+  h2{
+    text-align:center;
+  }
 }
 
 #name{

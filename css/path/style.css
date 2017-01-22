@@ -1,10 +1,16 @@
-h1, h2, h3, h4, h5, h6 {
+body {
+  color: #000;
+  font-size: 1rem; }
+
+h2 {
   font-weight: bold; }
 
-h3 {
-  font-weight: normal;
-  font-size: 1.75rem; }
+h1, h3, h4, h5, h6 {
+  font-weight: normal; }
 
+/*h3{
+  font-size:1.75rem;
+}*/
 a {
   text-decoration: none;
   font-weight: bold;
@@ -14,6 +20,9 @@ a {
   margin-top: 0.5em;
   color: #FFF0D5; }
 
+#works-list h3 {
+  margin-top: -1.25em; }
+
 .nav {
   margin: 0;
   padding: 0;
@@ -22,7 +31,6 @@ a {
   height: 3em;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  text-align: right;
   z-index: 3;
   background-color: #fff;
   position: fixed; }
@@ -35,11 +43,37 @@ a {
       background-color: #FA7D8C; }
     .nav li a {
       color: #000; }
+  .nav li.current {
+    background-color: #FA7D8C; }
+
+#works-list {
+  margin: 0;
+  padding: 0; }
+  #works-list li {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 50vh;
+    width: 100%;
+    background: #6BD6C4; }
+    #works-list li:nth-child(even) {
+      background: #99EADC; }
+  #works-list .desktop-img {
+    width: 35vw;
+    min-width: 20em;
+    padding-top: 3em; }
+  #works-list .mobile-img {
+    width: 15vw;
+    min-width: 10em; }
+  #works-list .button {
+    margin-top: 1em; }
 
 body {
   margin: 0 auto;
-  padding: 0;
-  color: #000; }
+  padding: 0; }
 
 .vertical {
   position: absolute;
@@ -109,6 +143,8 @@ body {
   min-height: 50vh;
   width: 100%;
   background: #FA7D8C; }
+  .contact h2 {
+    text-align: center; }
 
 #name {
   margin-top: 25vh; }

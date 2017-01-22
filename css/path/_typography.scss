@@ -1,13 +1,21 @@
 $font-stack:Metropolis,sans-serif;
 
-h1,h2,h3,h4,h5,h6{
+body{
+  color:$black;
+  font-size:1rem;
+}
+
+h2{
   font-weight:bold;
 }
 
-h3{
+h1,h3,h4,h5,h6{
   font-weight:normal;
-  font-size:1.75rem;
 }
+
+/*h3{
+  font-size:1.75rem;
+}*/
 
 a{
   text-decoration:none;
@@ -18,5 +26,15 @@ a{
 #main-subtitle{
   margin-top:0.5em;
   color:$neutral;
+}
+
+#works-list{
+  h2{
+    
+  }
+  
+  h3{
+    margin-top:-1.25em;
+  }
 }
 

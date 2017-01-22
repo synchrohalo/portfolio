@@ -8,7 +8,6 @@
   height:$height;
   border-top:2px solid $black;
   border-bottom:2px solid $black;
-  text-align:right;
   z-index:3;
   background-color:$white;
   position:fixed;
@@ -27,4 +26,8 @@
         color:$black;
       }
     }
+    
+  li.current{
+    background-color:$contrast;
+  }
 }

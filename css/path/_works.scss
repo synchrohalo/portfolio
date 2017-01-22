@@ -1,0 +1,30 @@
+#works-list{
+  margin:0;
+  padding:0;
+
+  li{
+    text-align:center;
+    list-style-type:none;
+    @include section(50vh); 
+    background:$base; 
+    
+    &:nth-child(even){
+      background:$base-light;
+    }
+  }
+
+  .desktop-img{
+    width:35vw;
+    min-width:20em;
+    padding-top:3em;
+  }
+
+  .mobile-img{
+    width:15vw;
+    min-width:10em;
+  }
+  
+  .button{
+    margin-top:1em;
+  }
+}

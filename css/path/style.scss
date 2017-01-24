@@ -8,13 +8,14 @@ $black:#000;
 
 $rad:10em;
 
-@mixin section($height){
+@mixin section($height:60vh, $background:$base){
   margin:0 auto;
   padding:0;
   padding-top:3em;
   padding-bottom:3em;
   min-height:$height;
   width:100%;
+  background-color:$background;
 }
 
 @mixin linear-gradient($direction, $color-stops...){
@@ -46,7 +47,7 @@ $rad:10em;
   @-o-keyframes #{$animation-name} {
     @content;
   }  
-  @keyframes #{$animation-name} {
+  @keyframes #{$animation-name}{
     @content;
   }
 }
@@ -59,7 +60,19 @@ $rad:10em;
   animation: #{$str};      
 }
 
+@mixin box-shadow($shadow...){
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+
+@mixin opacity($opacity){
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity*100);
+}
+
 @import "typography";
+@import "button";
 @import "nav";
 @import "works";
 
@@ -71,33 +84,7 @@ body{
 .vertical{
   position:absolute;
   top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-}
-
-
-.button{
-  $height:3em;
-  
-  margin:0 auto;
-  margin-top:3em;
-  border:2px solid $base-dark;
-  text-align:center;
-  height:$height;
-  width:18vw;
-  min-width:15em;
-  border-radius:$rad;
-  line-height:$height;
-  font-weight:normal;
-  
-  @include transition(background-color .2s ease-in);
-  background-color:$white;
-  color:$base-dark;
-  
-  &:hover{
-    color:$white;
-    background-color:$base-dark;
-  }
+  transform:translate-y(-50%);
 }
 
 .row.stagger [class^="col"]{
@@ -105,25 +92,23 @@ body{
 }
 
 #home{
-  @include section(60vh);
+  @include section(60vh,$base);
   text-align:center;
-  background-image:url("../../../img/title-pattern.svg");
-  background:$base;
+  background-image:url("../../img/title-pattern.png");
+  background-attachment:fixed;
+  background-repeat:repeat;
 }
 
 #about{
-  @include section(60vh);
-  background:$neutral;
+  @include section(60vh,$neutral);
 }
 
 #skills{
-  @include section(50vh);
-  background:$neutral;
+  @include section(50vh,$neutral);
 }
 
 .contact{
-  @include section(50vh);
-  background:$contrast;
+  @include section(50vh,$contrast);
   
   h2{
     text-align:center;

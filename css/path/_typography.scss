@@ -2,14 +2,10 @@ $font-stack:Metropolis,sans-serif;
 
 body{
   color:$black;
-  font-size:1rem;
+  font-size:1em;
 }
 
-h2{
-  font-weight:bold;
-}
-
-h1,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
   font-weight:normal;
 }
 
@@ -26,15 +22,44 @@ a{
 #main-subtitle{
   margin-top:0.5em;
   color:$neutral;
+  font-weight:bold;
 }
 
-#works-list{
+#works-list,.works-title{
   h2{
-    
+    font-weight:bold;
   }
   
   h3{
     margin-top:-1.25em;
   }
+  
+  .mobile-item h2{
+    //margin-top:5em;
+  }
 }
 
+#illustrations{
+  a{
+    font-weight:normal;
+    color:$base-dark;
+  }
+}
+
+.works-header{
+  h2{
+    margin-top:2em;
+  }
+  p{
+    margin-top:-1em;
+  }
+}
+
+.caption{
+
+  p{
+    font-size:1em;
+    line-height:1.5em;
+    margin-top:-1em;
+  }
+}

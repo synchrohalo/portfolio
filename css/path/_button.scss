@@ -1,0 +1,31 @@
+.button{
+  $height:3em;
+  
+  margin:0 auto;
+  margin-top:3em;
+  border:2px solid $base-dark;
+  text-align:center;
+  height:$height;
+  width:18vw;
+  min-width:15em;
+  border-radius:$rad;
+  line-height:$height;
+  font-weight:normal;
+  
+  @include transition(background-color .2s ease-in);
+  background-color:$white;
+  color:$base-dark;
+  
+  &:hover{
+    color:$white;
+    background-color:$base-dark;
+  }
+}
+
+.fixed-button{
+  z-index:3;
+  position:fixed;
+  bottom:5em;
+  right:5em;
+  @include box-shadow(0.2em 0.2em 0px $base-dark);
+}

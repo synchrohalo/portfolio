@@ -162,6 +162,12 @@ a {
   min-height: 50vh;
   width: 100%;
   background-color: #6BD6C4; }
+  .works-header img {
+    max-width: 60%;
+    max-height: 35em;
+    -webkit-box-shadow: 0.3em 0.3em 0px #27A08C;
+    -moz-box-shadow: 0.3em 0.3em 0px #27A08C;
+    box-shadow: 0.3em 0.3em 0px #27A08C; }
 
 .works-process {
   margin: 0 auto;
@@ -226,7 +232,8 @@ body {
   padding-bottom: 3em;
   min-height: 50vh;
   width: 100%;
-  background-color: #FA7D8C; }
+  background-color: #FA7D8C;
+  border-top: 2px solid #000; }
   .contact h2 {
     text-align: center; }
 

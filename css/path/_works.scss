@@ -94,6 +94,12 @@
 
 .works-header{
   @include section(50vh);
+ 
+  img{
+    max-width:60%;
+    max-height:35em;
+    @include box-shadow(0.3em 0.3em 0px $base-dark);
+  }
 }
 
 .works-process{

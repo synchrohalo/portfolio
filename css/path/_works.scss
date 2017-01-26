@@ -1,3 +1,27 @@
+#preload{
+  display:none;
+
+  li{
+    list-style-type:none;
+  }
+
+  &:nth-child(1){
+    background-image:url("../../img/works/thumbnail/thumb-book.png"); 
+  }
+
+  &:nth-child(2){
+    background-image:url("../../img/works/thumbnail/thumb-CS.png"); 
+  }
+  
+  &:nth-child(3){
+    background-image:url("../../img/works/thumbnail/thumb-lich.png"); 
+  }
+
+  &:nth-child(4){
+    background-image:url("../../img/works/thumbnail/thumb-day31.png"); 
+  }
+}
+
 #works-list{
   margin:0;
   padding:0;
@@ -43,7 +67,6 @@
     vertical-align:top;
     height:12em;
     width:12em;
-    //border:2px solid $black;
     
     @include box-shadow(0.3em 0.3em 0px $base-dark);
     
@@ -67,10 +90,10 @@
     }
     
     #thumb-cs{
-      background-image:url("../../img/works/thumbnail/greyscale/thumb-cs.png");
+      background-image:url("../../img/works/thumbnail/greyscale/thumb-CS.png");
       
       &:hover{
-        background-image:url("../../img/works/thumbnail/thumb-cs.png");  
+        background-image:url("../../img/works/thumbnail/thumb-CS.png");  
       }
     }
     

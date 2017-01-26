@@ -56,6 +56,7 @@
       background-color:$base-dark;
       background-size:contain;
       @include filter(grayscale, 100%);
+      @include transition(.2s ease-in-out);
 
       &:hover{ 
         -webkit-filter:none;
@@ -68,34 +69,18 @@
 
     #thumb-book{
       background-image:url("../../img/works/thumbnail/thumb-book.png"); 
-      
-     /* &:hover{
-        background-image:url("../../img/works/thumbnail/thumb-book.png");  
-      }*/
     }
     
     #thumb-cs{
       background-image:url("../../img/works/thumbnail/thumb-CS.png");
-      
-      /*&:hover{
-        background-image:url("../../img/works/thumbnail/thumb-CS.png");  
-      }*/
     }
     
     #thumb-day-31{
       background-image:url("../../img/works/thumbnail/thumb-day31.png");
-      
-      /*&:hover{
-        background-image:url("../../img/works/thumbnail/thumb-day31.png");  
-      }*/
     }
     
     #thumb-lich{
       background-image:url("../../img/works/thumbnail/thumb-lich.png");
-      
-      /*&:hover{
-        background-image:url("../../img/works/thumbnail/thumb-lich.png");  
-      }*/
     }
   }
 }

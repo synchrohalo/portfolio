@@ -106,6 +106,17 @@ nav {
     padding: 0;
     height: 1em; }
 
+#preload {
+  display: none; }
+  #preload:nth-child(1) {
+    background-image: url("../../img/works/thumbnail/thumb-book.png"); }
+  #preload:nth-child(2) {
+    background-image: url("../../img/works/thumbnail/thumb-CS.png"); }
+  #preload:nth-child(3) {
+    background-image: url("../../img/works/thumbnail/thumb-lich.png"); }
+  #preload:nth-child(4) {
+    background-image: url("../../img/works/thumbnail/thumb-day31.png"); }
+
 #works-list {
   margin: 0;
   padding: 0; }

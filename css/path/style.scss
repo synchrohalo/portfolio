@@ -92,7 +92,7 @@ body{
 }
 
 #home{
-  @include section(60vh,$base);
+  @include section(50vh,$base);
   text-align:center;
   background-image:url("../../img/title-pattern.png");
   background-attachment:fixed;
@@ -100,20 +100,21 @@ body{
 }
 
 #about{
-  @include section(60vh,$neutral);
+  @include section(40vh,$neutral);
 }
 
 #skills{
-  @include section(50vh,$neutral);
+  @include section(40vh,$neutral);
+  padding-bottom:5em;
 }
 
 .contact{
-  @include section(50vh,$contrast);
+  @include section(20vh,$contrast);
   border-top:2px solid $black;
 }
 
 #name{
-  margin-top:25vh;
+  margin-top:15vh;
   
   img{
     height:10vh;
@@ -133,7 +134,7 @@ body{
   max-width:15em;
 }
 
-@media only screen and (max-width:720px) and (orientation:landscape){
+@media only screen and (max-width:736px) and (orientation:landscape){
   #name{
   
     img{

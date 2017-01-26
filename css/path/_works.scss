@@ -93,13 +93,17 @@
 }
 
 .works-header{
-  @include section(50vh);
+  @include section(20vh);
  
   img{
     max-width:60%;
     max-height:35em;
     @include box-shadow(0.3em 0.3em 0px $base-dark);
   }
+}
+
+.illust-header{
+  padding-bottom:3em;
 }
 
 .works-process{
@@ -116,7 +120,13 @@
     }
 
     &.wide{
+      width:100%;
+    }
+
+    &.square{
+      width:60%;
       max-width:35em;
+      max-height:35em;
     }
   }
 }

@@ -6,5 +6,4 @@
 	<li>vertically center content in columns</li>
 	<li>add animated scroll</li>
 	<li>spice up contact footer</li>
-	<li>make Design Thinking mockups playable</li>
 </ul>

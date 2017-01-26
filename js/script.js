@@ -9,4 +9,16 @@ $( document ).ready(function() {
       $( 'nav ul li:eq(0)' ).addClass( 'current' );
     }
   });
+
+  // initialize gif playing in DT project
+	var playGifReady = function(){
+		$( ".gif-play" ).click( function(){
+				var id = $( this ).attr( "id" );
+				console.log( id );
+				
+				$( this ).attr( "src", "../img/works/design/" + id + ".gif" );
+		});
+	}
+	
+	playGifReady();
 });

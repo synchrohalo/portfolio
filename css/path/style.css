@@ -107,19 +107,6 @@ nav {
     padding: 0;
     height: 1em; }
 
-#preload {
-  display: none; }
-  #preload li {
-    list-style-type: none; }
-  #preload:nth-child(1) {
-    background-image: url("../../img/works/thumbnail/thumb-book.png"); }
-  #preload:nth-child(2) {
-    background-image: url("../../img/works/thumbnail/thumb-CS.png"); }
-  #preload:nth-child(3) {
-    background-image: url("../../img/works/thumbnail/thumb-lich.png"); }
-  #preload:nth-child(4) {
-    background-image: url("../../img/works/thumbnail/thumb-day31.png"); }
-
 #works-list {
   margin: 0;
   padding: 0; }
@@ -166,23 +153,38 @@ nav {
     height: 12em;
     width: 12em;
     background-color: #27A08C;
-    background-size: contain; }
+    background-size: contain;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    #illustrations li .thumb:hover {
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      -o-filter: none;
+      filter: none; }
   #illustrations li #thumb-book {
-    background-image: url("../../img/works/thumbnail/greyscale/thumb-book.png"); }
-    #illustrations li #thumb-book:hover {
-      background-image: url("../../img/works/thumbnail/thumb-book.png"); }
+    background-image: url("../../img/works/thumbnail/thumb-book.png");
+    /* &:hover{
+       background-image:url("../../img/works/thumbnail/thumb-book.png");  
+     }*/ }
   #illustrations li #thumb-cs {
-    background-image: url("../../img/works/thumbnail/greyscale/thumb-CS.png"); }
-    #illustrations li #thumb-cs:hover {
-      background-image: url("../../img/works/thumbnail/thumb-CS.png"); }
+    background-image: url("../../img/works/thumbnail/thumb-CS.png");
+    /*&:hover{
+      background-image:url("../../img/works/thumbnail/thumb-CS.png");  
+    }*/ }
   #illustrations li #thumb-day-31 {
-    background-image: url("../../img/works/thumbnail/greyscale/thumb-day31.png"); }
-    #illustrations li #thumb-day-31:hover {
-      background-image: url("../../img/works/thumbnail/thumb-day31.png"); }
+    background-image: url("../../img/works/thumbnail/thumb-day31.png");
+    /*&:hover{
+      background-image:url("../../img/works/thumbnail/thumb-day31.png");  
+    }*/ }
   #illustrations li #thumb-lich {
-    background-image: url("../../img/works/thumbnail/greyscale/thumb-lich.png"); }
-    #illustrations li #thumb-lich:hover {
-      background-image: url("../../img/works/thumbnail/thumb-lich.png"); }
+    background-image: url("../../img/works/thumbnail/thumb-lich.png");
+    /*&:hover{
+      background-image:url("../../img/works/thumbnail/thumb-lich.png");  
+    }*/ }
 
 .works-header {
   margin: 0 auto;

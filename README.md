@@ -6,6 +6,5 @@
 	<li>vertically center content in columns</li>
 	<li>add animated scroll</li>
 	<li>spice up contact footer</li>
-	<li>highlight "About" depending on scroll position</li>
-	<li>make Dino Think mockups playable</li>
+	<li>make Design Thinking mockups playable</li>
 </ul>

@@ -110,10 +110,6 @@ body{
 .contact{
   @include section(50vh,$contrast);
   border-top:2px solid $black;
-  
-  h2{
-    text-align:center;
-  }
 }
 
 #name{

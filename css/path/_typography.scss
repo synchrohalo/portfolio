@@ -25,6 +25,22 @@ a{
   font-weight:bold;
 }
 
+.contact{
+  h2{
+    text-align:center;
+  }
+
+  a{
+    color:$black;
+    background:$base-dark;
+  
+    &:hover{
+      background:$base-light;
+    }
+
+  }
+}
+
 #works-list,.works-title{
   h2{
     font-weight:bold;

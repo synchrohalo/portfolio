@@ -1,22 +1,23 @@
-.nav{
+nav{
   $height:3em;
 
   margin:0;
   padding:0;
-  list-style-type:none;
   width:100%;
+  position:fixed;
   height:$height;
-  //border-top:2px solid $black;
   border-bottom:2px solid $black;
   z-index:5;
   background-color:$white;
-  position:fixed;
-  
-  li{
-    display:inline;
-    margin-left:1em;
-    margin-right:1em;
-    line-height:$height;
+
+
+  ul{
+    list-style-type:none;
+
+    li{
+      display:inline;
+      margin-left:1em;
+      margin-right:1em;
     
       &:hover{
         background-color:$contrast;
@@ -27,7 +28,14 @@
       }
     }
     
-  li.current{
-    background-color:$contrast;
+    li.current{
+      background-color:$contrast;
+    }
+  }
+
+  img{
+    margin:0;
+    padding:0;
+    height:1em;
   }
 }

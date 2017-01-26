@@ -1,11 +1,11 @@
 nav{
-  $height:3em;
 
   margin:0;
   padding:0;
   width:100%;
   position:fixed;
-  height:$height;
+  min-height:5vh;
+	height:auto;
   border-bottom:2px solid $black;
   z-index:5;
   background-color:$white;

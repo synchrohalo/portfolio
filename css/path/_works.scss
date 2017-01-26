@@ -107,7 +107,8 @@
 }
 
 .works-process{
-  @include section(60vh,$neutral);
+  @include section(50vh,$neutral);
+  //padding-bottom:5em;
 
   img{
     width:auto;

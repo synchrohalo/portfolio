@@ -85,7 +85,8 @@ nav {
   padding: 0;
   width: 100%;
   position: fixed;
-  height: 3em;
+  min-height: 5vh;
+  height: auto;
   border-bottom: 2px solid #000;
   z-index: 5;
   background-color: #fff; }
@@ -105,6 +106,17 @@ nav {
     margin: 0;
     padding: 0;
     height: 1em; }
+
+#preload {
+  display: none; }
+  #preload:nth-child(1) {
+    background-image: url("../../img/works/thumbnail/thumb-book.png"); }
+  #preload:nth-child(2) {
+    background-image: url("../../img/works/thumbnail/thumb-CS.png"); }
+  #preload:nth-child(3) {
+    background-image: url("../../img/works/thumbnail/thumb-lich.png"); }
+  #preload:nth-child(4) {
+    background-image: url("../../img/works/thumbnail/thumb-day31.png"); }
 
 #works-list {
   margin: 0;
@@ -158,9 +170,9 @@ nav {
     #illustrations li #thumb-book:hover {
       background-image: url("../../img/works/thumbnail/thumb-book.png"); }
   #illustrations li #thumb-cs {
-    background-image: url("../../img/works/thumbnail/greyscale/thumb-cs.png"); }
+    background-image: url("../../img/works/thumbnail/greyscale/thumb-CS.png"); }
     #illustrations li #thumb-cs:hover {
-      background-image: url("../../img/works/thumbnail/thumb-cs.png"); }
+      background-image: url("../../img/works/thumbnail/thumb-CS.png"); }
   #illustrations li #thumb-day-31 {
     background-image: url("../../img/works/thumbnail/greyscale/thumb-day31.png"); }
     #illustrations li #thumb-day-31:hover {

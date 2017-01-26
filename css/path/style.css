@@ -13,9 +13,9 @@ a {
   font-weight: bold;
   color: #27A08C; }
 
-#main-subtitle {
+h1#main-subtitle {
   margin-top: 0.25em;
-  color: #FFF0D5;
+  color: #000;
   font-weight: bold; }
 
 .contact h2 {
@@ -229,6 +229,7 @@ body {
   text-align: center;
   background-image: url("../../img/title-pattern.png");
   background-attachment: fixed;
+  background-size: 25%;
   background-repeat: repeat; }
 
 #about {
@@ -260,7 +261,7 @@ body {
   border-top: 2px solid #000; }
 
 #name {
-  margin-top: 15vh; }
+  margin-top: 19vh; }
   #name img {
     height: 10vh;
     max-height: 10em; }

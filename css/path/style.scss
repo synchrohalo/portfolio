@@ -8,6 +8,7 @@ $black:#000;
 
 $rad:10em;
 
+// section
 @mixin section($height:60vh, $background:$base){
   margin:0 auto;
   padding:0;
@@ -18,14 +19,8 @@ $rad:10em;
   background-color:$background;
 }
 
-@mixin linear-gradient($direction, $color-stops...){
-  background:nth(nth($color-stops, 1), 1);
-  background:-webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background:linear-gradient($direction, $color-stops);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
+// transition
 @mixin transition($args...){
   -webkit-transition:$args;
   -moz-transition:$args;
@@ -34,6 +29,7 @@ $rad:10em;
   transition:$args;
 }
 
+// keyframes
 @mixin keyframes($animation-name){
   @-webkit-keyframes #{$animation-name} {
     @content;
@@ -52,6 +48,7 @@ $rad:10em;
   }
 }
 
+// animation
 @mixin animation($str){
   -webkit-animation: #{$str};
   -moz-animation: #{$str};
@@ -60,12 +57,14 @@ $rad:10em;
   animation: #{$str};      
 }
 
+// box shadow
 @mixin box-shadow($shadow...){
   -webkit-box-shadow:$shadow;
   -moz-box-shadow:$shadow;
   box-shadow:$shadow;
 }
 
+// opacity
 @mixin opacity($opacity){
   opacity: $opacity;
   filter: alpha(opacity=$opacity*100);
@@ -96,6 +95,7 @@ body{
   text-align:center;
   background-image:url("../../img/title-pattern.png");
   background-attachment:fixed;
+  background-size:25%;
   background-repeat:repeat;
 }
 
@@ -105,7 +105,6 @@ body{
 
 #skills{
   @include section(40vh,$neutral);
-  //padding-bottom:5em;
 }
 
 .contact{
@@ -114,7 +113,7 @@ body{
 }
 
 #name{
-  margin-top:15vh;
+  margin-top:19vh;
   
   img{
     height:10vh;

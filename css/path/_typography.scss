@@ -1,5 +1,3 @@
-$font-stack:Metropolis,sans-serif;
-
 body{
   color:$black;
   font-size:1em;
@@ -19,9 +17,9 @@ a{
   color:$base-dark;
 }
 
-#main-subtitle{
+h1#main-subtitle{
   margin-top:0.25em;
-  color:$neutral;
+  color:$black;
   font-weight:bold;
 }
 

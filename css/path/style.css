@@ -125,13 +125,43 @@ nav {
   #works-list .desktop-img {
     width: 35vw;
     min-width: 20em;
-    padding-top: 3em; }
+    padding-top: 3em;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    #works-list .desktop-img:hover {
+      margin-top: -1em;
+      padding-bottom: 1em; }
   #works-list .mobile-img {
     width: 15vw;
-    min-width: 10em; }
+    min-width: 10em;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    #works-list .mobile-img:hover {
+      margin-top: -1em;
+      padding-bottom: 1em; }
   #works-list .button {
     margin-top: 1em; }
 
+/*.stagger{
+  #works-list{
+    .mobile-img{
+    width:15vw;
+    min-width:10em;
+    @include transition(.2s ease-in-out);
+
+    &:hover{
+      margin-top:-1em;
+      padding-bottom:1em;
+    }
+  }
+}
+}*/
 #illustrations ul {
   margin: 0 auto;
   padding: 0;

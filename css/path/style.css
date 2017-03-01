@@ -1,3 +1,30 @@
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  min-height: 5vh;
+  height: auto;
+  border-bottom: 2px solid #000;
+  z-index: 5;
+  background-color: #fff; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline;
+      margin-left: 1em;
+      margin-right: 1em; }
+      nav ul li:hover {
+        background-color: #FA7D8C; }
+      nav ul li a {
+        color: #000; }
+    nav ul li.current {
+      background-color: #FA7D8C; }
+  nav img {
+    margin: 0;
+    padding: 0;
+    height: 1em; }
+
 body {
   color: #000;
   font-size: 1em; }
@@ -79,33 +106,6 @@ h1#main-subtitle {
   -webkit-box-shadow: 0.2em 0.2em 0px #27A08C;
   -moz-box-shadow: 0.2em 0.2em 0px #27A08C;
   box-shadow: 0.2em 0.2em 0px #27A08C; }
-
-nav {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: fixed;
-  min-height: 5vh;
-  height: auto;
-  border-bottom: 2px solid #000;
-  z-index: 5;
-  background-color: #fff; }
-  nav ul {
-    list-style-type: none; }
-    nav ul li {
-      display: inline;
-      margin-left: 1em;
-      margin-right: 1em; }
-      nav ul li:hover {
-        background-color: #FA7D8C; }
-      nav ul li a {
-        color: #000; }
-    nav ul li.current {
-      background-color: #FA7D8C; }
-  nav img {
-    margin: 0;
-    padding: 0;
-    height: 1em; }
 
 #works-list {
   margin: 0;

@@ -79,9 +79,9 @@ $rad:10em;
   filter:$filter-type+unquote('(#{$filter-amount})');
 }
 
+@import "nav";
 @import "typography";
 @import "button";
-@import "nav";
 @import "works";
 
 body{

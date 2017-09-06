@@ -10,7 +10,7 @@
   width:18vw;
   min-width:15em;
   border-radius:$rad;
-  line-height:$height - .2em;
+  line-height:$height + .2em;
   font-weight:normal;
   
   @include transition(background-color .2s ease-in);

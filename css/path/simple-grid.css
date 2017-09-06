@@ -10,7 +10,7 @@ body {
   font-size: 100%; }
 
 * {
-  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", "Nunito Regular", Helvetica, Arial, sans-serif;
   /*color: $dark-grey;*/
   line-height: 1.5; }
 

@@ -86,7 +86,12 @@ h1#main-subtitle {
   width: 18vw;
   min-width: 15em;
   border-radius: 10em;
-  line-height: 3.2em;
+  display: -webkit-inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: normal;
   -webkit-transition: background-color 0.2s ease-in;
   -moz-transition: background-color 0.2s ease-in;
